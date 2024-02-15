@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+  <head>
+    <meta charset = 'utf-8' />
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0' />
+    <title>AVENTURA XPLORA</title>
+    <link rel = 'icon' href = '../assets/icons/favicon.png'>
+
+    <link rel = 'stylesheet' href = '../css/general.css' />
+
+    <link rel = 'stylesheet' href = '../css/shared/header/style.css' />
+
+    <link rel = 'stylesheet' href = '../css/login/main-content/style.css' />
+
+    <link rel = 'stylesheet' href = '../css/shared/footer/style.css' />
+
+    <link rel = 'stylesheet' href = '../css/shared/bottom-bar/style.css' />
+  </head>
+  <body>
+    <main class = 'main'>
+      <section class = 'login-wrapper'>
+        <section class = 'login-wrapper-contenido'>
+          <div class = 'logo-login-wrapper'>
+            <a href = '../index.html'>
+              <img class = 'login-logo' src = '../assets/img/logo/logo.png' alt = 'logo' />
+            </a>
+          </div>
+
+          <!-- --------------------------------------------- -->
+
+          <h3>Inicia sesión para acceder a <span class = 'login-negrita'>nuestros productos</span></h3>
+
+          <!-- --------------------------------------------- -->
+
+          <form class = 'formulario-login' action = '../index.html'>
+            <div class = 'input-wrapper'>
+              <label for = 'usuario-input'>Usuario<span class = 'obligatorio'>*</span></label>
+              <input id = 'usuario-input' class = 'login-input' type = 'text' placeholder = 'Introduce tu usuario...' onfocus = 'this.select()' autofocus required>
+            </div>
+
+            <div class = 'input-wrapper'>
+              <label for = 'password-input'>Contraseña<span class = 'obligatorio'>*</span></label>
+              <input id = 'password-input' class = 'login-input' type = 'password' placeholder = 'Introduce tu contraseña...' onfocus = 'this.select()' required>
+              <p class = 'problema-password-texto'>¿Problemas con tu contraseña?</p>
+            </div>
+
+            <div class = 'botones-wrapper'>
+              <button class = 'login-btn boton--iniciar-sesion'>INICIAR SESIÓN</button>
+              <button class = 'login-btn boton--registrar' formnovalidate>REGISTRARSE</button>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <!-- ------------------------------------------------------------------ -->
+
+    <footer class = 'main-footer'>
+      <section class = 'footer'>
+        <article class = 'contenido-footer'>
+          <div class = 'textos-footer'>
+            <div class = 'seccion-texto-footer sobre-nosotros'>
+              <h3>Sobre nosotros</h3>
+              <ul>
+                <li>Quiénes somos</li>
+                <li>Sostenibilidad</li>
+                <li>Tarjeta AventuraXplora</li>
+                <li>Trabaja con nosotros</li>
+                <li>AventuraXplora</li>
+                <li>Afiliados</li>
+              </ul>
+            </div>
+
+            <!-- -------------------------- -->
+
+            <div class = 'barra-divisoria-footer'></div>
+
+            <!-- -------------------------- -->
+
+            <div class = 'seccion-texto-footer planea-tu-viaje'>
+              <h3>Planea tu viaje</h3>
+              <ul>
+                <li>Blog de viajes</li>
+                <li>Guías de viaje</li>
+                <li>Vente de maratón</li>
+                <li>Catálogos</li>
+                <li>Grupos</li>
+              </ul>
+            </div>
+
+            <!-- -------------------------- -->
+
+            <div class = 'barra-divisoria-footer'></div>
+
+            <!-- -------------------------- -->
+
+            <div class = 'seccion-texto-footer informacion-importante'>
+              <h3>Información importante</h3>
+              <ul>
+                <li>Condiciones generales</li>
+                <li>Política de privacidad</li>
+                <li>Centro de ayuda</li>
+                <li>Viajar a EE.UU.</li>
+                <li>Auto check-in</li>
+                <li>Política de cookies</li>
+              </ul>
+            </div>
+
+            <!-- -------------------------- -->
+
+            <div class = 'barra-divisoria-footer'></div>
+
+            <!-- -------------------------- -->
+
+            <div class = 'seccion-texto-footer internacional'>
+              <h3>Internacional</h3>
+              <div class = 'footer-internacional-columnas'>
+                <div class = 'footer-internacional-columna-1'>
+                  <ul>
+                    <li>Portugal</li>
+                    <li>Chile</li>
+                    <li>Perú</li>
+                    <li>Panamá</li>
+                    <li>R. Dominicana</li>
+                  </ul>
+                </div>
+
+                <div class = 'footer-internacional-columna-2'>
+                  <ul>
+                    <li>Colombia</li>
+                    <li>Argentina</li>
+                    <li>México</li>
+                    <li>Ecuador</li>
+                    <li>Uruguay</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ------------------------------------------------------- -->
+
+          <div class = 'logo--redes-sociales'>
+            <div class = 'barra-divisoria-footer--segundo-wrapper hidden'></div>
+
+            <div class = 'logo-wrapper-footer'>
+              <a href = '../index.html'>
+                <img class = 'logo' src = '../assets/img/logo/logo.png' alt = 'logo' />
+              </a>
+            </div>
+
+            <div class = 'barra-divisoria-footer--segundo-wrapper hidden'></div>
+
+            <div class = 'redes-sociales'>
+              <h4>Síguenos en:</h4>
+              <div class = 'redes-sociales-iconos'>
+                <div class = 'twitter-wrapper'>
+                  <img class = 'icono-social-footer' src = '../assets/icons/socials/twitter.svg' alt = 'twitter' />
+                </div>
+                <div class = 'instagram-wrapper'>
+                  <img class = 'icono-social-footer' src = '../assets/icons/socials/instagram.svg' alt = 'instagram' />
+                </div>
+                <div class = 'youtube-wrapper'>
+                  <img class = 'icono-social-footer' src = '../assets/icons/socials/youtube.svg' alt = 'youtube' />
+                </div>
+                <div class = 'tiktok-wrapper'>
+                  <img class = 'icono-social-footer' src = '../assets/icons/socials/tiktok.svg' alt = 'tiktok' />
+                </div>
+                <div class = 'facebook-wrapper'>
+                  <img class = 'icono-social-footer' src = '../assets/icons/socials/facebook.svg' alt = 'facebook' />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </footer>
+
+    <!-- ------------------------------------------------------------------ -->
+
+    <section class = 'bottom-bar-section'>
+      <article class = 'bottom-bar-content'>
+        <a href = 'busqueda.html'>
+          <img class = 'bottom-bar-icon' src = '../assets/icons/bottom-bar/search.svg' alt = 'search' />
+        </a>
+        <a href = '../index.html'>
+          <img class = 'bottom-bar-icon' src = '../assets/icons/bottom-bar/home.svg' alt = 'home' />
+        </a>
+        <a href = '#'>
+          <img class = 'bottom-bar-icon' src = '../assets/icons/bottom-bar/user.svg' alt = 'user' />
+        </a>
+      </article>
+    </section>
+  </body>
+</html>
