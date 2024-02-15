@@ -363,7 +363,7 @@
           <p>Recibe notificaciones para estar siempre al día con las últimas novedades de nuestra web y poder compartirlo con tus seres queridos</p>
         </div>
 
-        <form class = 'cta-form' name = 'cta-form' netlify>
+        <form class = 'cta-form' action = 'index.html' name = 'cta-form' method = 'post' data-netlify = 'true'>
           <div class = 'cta-input-wrapper cta-name-input'>
             <label for = 'cta-name'>Nombre<span class = 'obligatorio'>*</span></label>
             <input id = 'cta-name' class = 'cta-input' type = 'text' name = 'cta-name' required onfocus = 'this.select()' placeholder = 'Introduce tu nombre...' />
@@ -386,7 +386,7 @@
 
           <div class = 'cta-buttons'>
             <input class = 'cta-submit' type = 'submit' value = 'SUSCRIBIRSE' />
-            <input class = 'cta-reset' type ='reset' value = 'CANCELAR' />
+            <input class = 'cta-reset' type = 'reset' value = 'CANCELAR' />
           </div>
         </form>
       </article>
