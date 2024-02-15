@@ -22,9 +22,14 @@
 
     <link rel = 'stylesheet' href = '../css/contacto/overlay/style.css' />
 
+    <link rel = 'stylesheet' href = '../css/shared/cta-from/form/style.css' />
+    <link rel = 'stylesheet' href = '../css/shared/cta-from/overlay/style.css' />
+
     <!-- --------------------------------------------------------------------------------- -->
 
     <script src = '../js/contacto/formulario/script.js' defer></script>
+
+    <script src = '../js/shared/cta-form/script.js' defer></script>
   </head>
   <body>
     <header class = 'main-header'>
@@ -321,5 +326,44 @@
         </a>
       </article>
     </section>
+
+    <!-- ------------------------------------------------------------------ -->
+
+    <section class = 'cta-form-section hidden'>
+      <article class = 'cta-form-content'>
+        <div class = 'cta-form-text'>
+          <h2>SUSCRIBETE PARA OBTENER LAS MEJORES OFERTAS</h2>
+          <p>Recibe notificaciones para estar siempre al día con las últimas novedades de nuestra web y poder compartirlo con tus seres queridos</p>
+        </div>
+
+        <form class = 'cta-form' name = 'cta-form' netlify>
+          <div class = 'cta-input-wrapper cta-name-input'>
+            <label for = 'cta-name'>Nombre<span class = 'obligatorio'>*</span></label>
+            <input id = 'cta-name' class = 'cta-input' type = 'text' name = 'cta-name' required onfocus = 'this.select()' placeholder = 'Introduce tu nombre...' />
+          </div>
+
+          <div class = 'cta-input-wrapper cta-email-input'>
+            <label for = 'cta-email'>Email<span class = 'obligatorio'>*</span></label>
+            <input id = 'cta-email' class = 'cta-input' type = 'email' name = 'cta-email' required onfocus = 'this.select()' placeholder = 'Introduce tu email...' />
+          </div>
+
+          <div class = 'cta-input-wrapper cta-subscription--type-input'>
+            <label for = 'cta-subscription--type'>Tipo de suscripción<span class = 'obligatorio'>*</span></label>
+            <select id = 'cta-subscription--type' class = 'cta-input' name = 'cta-subscription--type' required>
+              <option value = '' selected disabled>Selecciona una opción</option>
+              <option value = 'daily'>Diaria - recibe información sobre nuevas ofertas</option>
+              <option value = 'weekly'>Semanal - recibe notificaciones sobre tus viajes favoritos</option>
+              <option value = 'monthly'>Mensual - mantente al tanto de nuestras promociones mensuales</option>
+            </select>
+          </div>
+
+          <div class = 'cta-buttons'>
+            <input class = 'cta-submit' type = 'submit' value = 'SUSCRIBIRSE' />
+            <input class = 'cta-reset' type ='reset' value = 'CANCELAR' />
+          </div>
+        </form>
+      </article>
+    </section>
+    <div class = 'cta-blur-overlay hidden'></div>
   </body>
 </html>

@@ -41,6 +41,7 @@ html {
 .lista-opciones-nav li a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .lista-opciones-nav li:hover {
