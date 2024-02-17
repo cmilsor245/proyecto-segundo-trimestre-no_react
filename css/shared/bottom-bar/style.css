@@ -37,6 +37,16 @@
   }
 }
 
+@media (max-width: 830px) {
+  .bottom-bar-section {
+    z-index: 10000;
+  }
+
+  .side-menu-wrapper {
+    z-index: 9999;
+  }
+}
+
 @media (max-width: 600px) {
   .bottom-bar-section {
     padding: 10px 5%;
