@@ -25,12 +25,17 @@
     <link rel = 'stylesheet' href = 'css/shared/cta-from/form/style.css' />
     <link rel = 'stylesheet' href = 'css/shared/cta-from/overlay/style.css' />
 
+    <link rel = 'stylesheet' href = 'css/shared/side-menu/menu/style.css' />
+    <link rel = 'stylesheet' href = 'css/shared/side-menu/overlay/style.css' />
+
     <!-- --------------------------------------------------------------------------------- -->
 
     <script src = 'js/home/slider/script.js' defer></script>
     <script src = 'js/home/guides/script.js' defer></script>
 
     <script src = 'js/shared/cta-form/script.js' defer></script>
+
+    <script src = 'js/shared/side-menu/script.js' defer></script>
   </head>
   <body>
     <!-- header -->
@@ -42,7 +47,7 @@
           </div>
 
           <div class = 'logo-wrapper'>
-            <a href = '#'>
+            <a href = 'index.html'>
               <img class = 'logo' src = 'assets/img/logo/logo.png' alt = 'logo' />
             </a>
           </div>
@@ -104,7 +109,7 @@
           <div class = 'icono-menu-lateral-wrapper'>
             <img class = 'icono-menu-lateral-nav' src = 'assets/icons/nav/menu.svg' alt = 'menu lateral' />
           </div>
-  
+
           <div class = 'opciones-nav-wrapper'>
             <ul class = 'lista-opciones-nav'>
               <li>CARIBE</li><div class = 'barra-divisoria-nav'></div>
@@ -524,7 +529,7 @@
         <a href = 'pages/busqueda.html'>
           <img class = 'bottom-bar-icon' src = 'assets/icons/bottom-bar/search.svg' alt = 'search' />
         </a>
-        <a href = '#'>
+        <a href = 'index.html'>
           <img class = 'bottom-bar-icon' src = 'assets/icons/bottom-bar/home.svg' alt = 'home' />
         </a>
         <a href = 'pages/login.html'>
@@ -542,7 +547,7 @@
           <p>Recibe notificaciones para estar siempre al día con las últimas novedades de nuestra web y poder compartirlo con tus seres queridos</p>
         </div>
 
-        <form class = 'cta-form' action = 'index.html' name = 'cta-form' method = 'post' data-netlify = 'true'>
+        <form class = 'cta-form' name = 'cta-form' method = 'post' data-netlify = 'true'> <!-- method = 'post' data-netlify = 'true' -->
           <div class = 'cta-input-wrapper cta-name-input'>
             <label for = 'cta-name'>Nombre<span class = 'obligatorio'>*</span></label>
             <input id = 'cta-name' class = 'cta-input' type = 'text' name = 'cta-name' required onfocus = 'this.select()' placeholder = 'Introduce tu nombre...' />
@@ -557,9 +562,9 @@
             <label for = 'cta-subscription--type'>Tipo de suscripción<span class = 'obligatorio'>*</span></label>
             <select id = 'cta-subscription--type' class = 'cta-input' name = 'cta-subscription--type' required>
               <option value = '' selected disabled>Selecciona una opción</option>
-              <option value = 'daily'>Diaria - recibe información sobre nuevas ofertas</option>
-              <option value = 'weekly'>Semanal - recibe notificaciones sobre tus viajes favoritos</option>
-              <option value = 'monthly'>Mensual - mantente al tanto de nuestras promociones mensuales</option>
+              <option value = 'daily'>Diaria</option>
+              <option value = 'weekly'>Semanal</option>
+              <option value = 'monthly'>Mensual</option>
             </select>
           </div>
 
@@ -571,5 +576,208 @@
       </article>
     </section>
     <div class = 'cta-blur-overlay hidden'></div>
+
+    <!-- ------------------------------------------------------------------ -->
+
+    <aside class = 'side-menu-wrapper hidden'>
+      <div class = 'side-menu-content'>
+        <div class = 'side-menu--top-options'>
+          <img class = 'side-menu--top--icon' src = 'assets/icons/side-menu/lightbulb.svg' alt = 'bombilla' />
+          <img class = 'side-menu--top--icon side--menu-close-icon' src = 'assets/icons/side-menu/close.svg' alt = 'close' />
+        </div>
+
+        <div class = 'side-menu--main--options'>
+          <div class = 'side-menu--contact-wrapper'>
+            <a href = 'pages/contacto.html'>
+              <img class = 'contact-icon-side--menu' src = 'assets/icons/header/telefono.svg' alt = 'contacto' />
+              <p>911 22 33 44</p>
+            </a>
+          </div>
+
+          <div class = 'side-menu--divider'></div>
+
+          <div class = 'side-menu--buttons--wrapper'>
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon1.svg' alt = 'agua' />
+                  <p>Costas</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon2.svg' alt = 'navidad' />
+                  <p>Navidad</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon3.svg' alt = 'maleta' />
+                  <p>Semana Santa</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon4.png' alt = 'palmera' />
+                  <p>Islas</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon5.svg' alt = 'esquí' />
+                  <p>Esquí</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon6.svg' alt = 'avión' />
+                  <p>Vuelos</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon7.svg' alt = 'euro' />
+                  <p>Viajes por Europa</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon8.svg' alt = 'sol' />
+                  <p>Caribe</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon9.svg' alt = 'corazón' />
+                  <p>Novios</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon10.svg' alt = 'coche' />
+                  <p>Coche</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon11.svg' alt = 'carretera' />
+                  <p>Circuitos</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon12.svg' alt = 'cama' />
+                  <p>Hoteles</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon13.svg' alt = 'tren' />
+                  <p>Trenes</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon14.svg' alt = 'persona' />
+                  <p>Jóvenes</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+
+            <!-- --------------- -->
+
+            <div class = 'side-menu--button'>
+              <a>
+                <div class = 'side-menu--button--left'>
+                  <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/icon15.svg' alt = 'cinta' />
+                  <p>Espectáculos</p>
+                </div>
+                <img class = 'side-menu--button--icon' src = 'assets/icons/side-menu/options/chevron.svg' alt = 'flecha' />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class = 'side--menu-blur-overlay hidden'></div>
   </body>
 </html>

@@ -90,7 +90,7 @@
   width: 100%;
 }
 
-.cta-input-wrapper input::placeholder {
+.cta-input-wrapper input::placeholder, .cta-input-wrapper select option {
   color: var(--neutral-light);
   font-family: var(--kameron-regular);
   font-size: 16px;
@@ -99,6 +99,12 @@
 .cta-input-wrapper select {
   cursor: pointer;
   width: 100%;
+}
+
+.cta-input-wrapper select option {
+  cursor: pointer;
+  background-color: var(--primario-dark-hover);
+  color: var(--neutral-light);
 }
 
 .cta-buttons {
@@ -136,3 +142,123 @@
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
+@media (max-width: 1450px) {
+  .cta-form-text h2 {
+    font-size: 30px;
+  }
+
+  .cta-form-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .cta-input-wrapper label {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cta-input-wrapper label {
+    font-size: 16px;
+  }
+
+  .cta-input-wrapper input, .cta-input-wrapper select {
+    padding: 5px;
+  }
+
+  .cta-buttons input {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 890px) {
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-form-text h2 {
+    font-size: 25px;
+  }
+
+  .cta-form-text p {
+    font-size: 16px;
+  }
+
+  .cta-input-wrapper label {
+    font-size: 20px;
+  }
+
+  .cta-input-wrapper input, .cta-input-wrapper select {
+    padding: 10px;
+  }
+
+  .cta-buttons input {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 740px) {
+  .cta-form-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cta-form-text h2 {
+    font-size: 20px;
+  }
+
+  .cta-form-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .cta-form-content {
+    width: 500px;
+  }
+}
+
+@media (max-width: 580px) {
+  .cta-form-text p {
+    display: none;
+  }
+
+  .cta-input-wrapper label {
+    font-size: 16px;
+  }
+
+  .cta-input-wrapper input, .cta-input-wrapper select {
+    padding: 5px;
+  }
+
+  .cta-input-wrapper input::placeholder, .cta-input-wrapper select option {
+    font-size: 14px;
+  }
+
+  .cta-buttons input {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 570px) {
+  .cta-form-content {
+    width: 400px;
+  }
+}
+
+@media (max-width: 460px) {
+  .cta-form-content {
+    width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  .cta-form-content {
+    width: 250px;
+  }
+}
